@@ -1,0 +1,19 @@
+extends layout
+
+block title
+    title lbs
+block head  
+    //- <!-- build:css css/lbs.css -->
+    link(rel='stylesheet', type='text/css', href='css/lbs.css')  
+    //- <!-- endbuild -->
+block js   
+    //- <!-- build:js js/lbs.js -->
+    script(src='js/lib/jquery.js')   
+    script(src='js/lib/store.js')   
+    script(src='js/lib/template.js')    
+    script(src='js/lbs.js')   
+    //- <!-- endbuild -->
+block content
+    div#J_Map.bd-map
+    div#J_marker.marker
+        b
