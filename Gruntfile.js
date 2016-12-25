@@ -8,6 +8,9 @@
 
 'use strict';
 module.exports = function (grunt) {
+    // show elapsed time at the end
+    require('time-grunt')(grunt);
+    
     grunt.initConfig({
 		filerev: {
 			options: {
